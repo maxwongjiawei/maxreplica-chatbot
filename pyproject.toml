@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "genai"
+version = "0.1.0"
+description = ""
+authors = ["WongMax <Wong.Max@bcg.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+chromadb = "0.3.25"
+langchain = "0.0.190"
+llama-index = "0.6.19"
+faiss-cpu = "1.7.4"
+fastapi = "0.96.0"
+gptcache = "0.1.29.1"
+openai = "0.27.4"
+spacy = "3.5.3"
+PyMuPDF = "1.22.3"
+python-dotenv = "1.0.0"
+python-box = "7.0.1"
+tiktoken = "0.3.3"
+unstructured = "0.5.3"
+ipykernel = "^6.23.1"
+python-telegram-bot = "^20.3"
+bardapi = "^0.1.19"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
