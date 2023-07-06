@@ -15,7 +15,7 @@ logging.basicConfig(
 PROMPT = 'chatbot_prompt'
 
 qa = initiate_all(PROMPT)
-token = '6234433703:AAEJOljbZS-lU2FqPw7FCKat9ScG-qKKuwo'
+token = ''
 chat_history = []
 all_chat_history = pd.DataFrame(columns=['query', 'answer', 'reaction', 'comments'])
 filename = datetime.datetime.now().strftime('%Y%m%d %H%M')
