@@ -1,4 +1,6 @@
 import logging
+import os
+
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, CallbackQueryHandler
 from telegram.ext import filters, MessageHandler, ApplicationBuilder, CommandHandler, ContextTypes
@@ -15,7 +17,7 @@ logging.basicConfig(
 PROMPT = 'chatbot_prompt'
 
 qa = initiate_all(PROMPT)
-token = '6234433703:AAEJOljbZS-lU2FqPw7FCKat9ScG-qKKuwo'
+token = os.environ['TELEGRAM_BOT_KEY']
 chat_history = []
 all_chat_history = pd.DataFrame(columns=['query', 'answer', 'reaction', 'comments'])
 filename = datetime.datetime.now().strftime('%Y%m%d %H%M')
